@@ -1,14 +1,19 @@
+// Import in folders
 import Navigation from "./Navigation"
+import Footer from "./Footer"
 
+// Function that renders the header
 function Header(props) {
+    // Styling for header
+    const headingStyle = {
+        backgroundImage: "url('galaxy-header.jpg')"
+    }
+
+    // Content in header
     return (
-        // <div className="card-panel black lighten-2">
-        //     <h1 className="red-text text-darken-2">Kimberly Howard</h1>
-        //     <Navigation />
-        // </div>
         <nav>
-            <div className="nav-wrapper">
-                <a href="#!" className="brand-logo center">Kimberly Howard</a>
+            <div style={headingStyle} className="nav-wrapper">
+                <p className="brand-logo center">Kimberly Howard</p>
                 <Navigation />
             </div>
         </nav>
