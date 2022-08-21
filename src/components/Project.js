@@ -35,9 +35,9 @@ function Project () {
         // backgroundColor: "#2AAA8A",
         fontFamily: "'Saira Condensed', sans-serif"
     }
-    const bioCard = {
+    const footer = {
         // height: "100rem"
-        backgroundColor: "black"
+        backgroundColor: "#250560"
     }
     const cardImage = {
         // display: "flex",
@@ -100,21 +100,13 @@ function Project () {
                             </div>
                         </div>
                     
-                        <div className="card-content" style={bioCard}>
-                            {/* <p style={bio}>Kimberly Howard is a detailed-oriented mathematician with a background 
-                            in education and web development. In May 2020, Kimberly graduated from 
-                            Kennesaw State University with a bachelor's degree in Computational 
-                            and Applied Mathematics. At the university, she was a Supplemental 
-                            Instruction Leader and worked in research. Kimberly started teaching 
-                            middle school math classes for two years after college. Then, she was 
-                            trained in coding by Georgia Tech Boot Camps. Currently, Kimberly is 
-                            seeking a front-end position in web development. You can find 
-                            her contact information below. </p> */}
+                        <div className="card-content" style={footer}>
+                            <Footer />
                         </div>
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
