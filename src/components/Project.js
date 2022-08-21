@@ -16,7 +16,8 @@ function Project () {
         height: "15rem",
         width: "10rem",
         margin: "2rem",
-        borderRadius: "75%"
+        borderRadius: "75%",
+        // justifyContent: "center"
     }
     const aboutMe = {
         color: "white",
@@ -59,6 +60,11 @@ function Project () {
     const bioContainer = {
         margin: "0.5rem"
     }
+
+    const imageContainer = {
+        display: "flex",
+        justifyContent: "center"
+    }
     return (
         <div style={body}>
             <Header />
@@ -66,10 +72,12 @@ function Project () {
                 <div className="col s12 m7" style={aboutMeCard}>
                     <div className="card" style={cardBody}>
                         <div style={cardImage}>
-                        <span className="card-title" style={aboutMe}>About Me</span>
-                            <div className="card-image">
-                                <img style={headshot} src="headshot.jpg" alt="Kimberly's Headshot" />
-                                {/* <span className="card-title" style={aboutMe}>About Me</span> */}
+                            <div className="row center" style={imageContainer}>
+                                <h1 className="card-title" style={aboutMe}>About Me</h1>
+                                <div className="card-image" style={imageContainer}>
+                                    <img style={headshot} src="headshot.jpg" alt="Kimberly's Headshot" />
+                                    {/* <span className="card-title" style={aboutMe}>About Me</span> */}
+                                </div>
                             </div>
                             <div>
                                 {/* <span className="card-title text-center" style={aboutMe}>About Me</span> */}
