@@ -2,7 +2,7 @@
 import Navigation from "./Navigation"
 
 // Function that renders the header
-function Header(props) {
+function Header() {
     // Styling for header
     const headingStyle = {
         backgroundColor: "#250560",
@@ -10,12 +10,14 @@ function Header(props) {
     }
     const name = {
         fontFamily: "'Rubik Dirt', cursive",
-        fontSize: "37px"
+        fontSize: "37px",
+        height: "8rem"
     }
-    const logo = {
-        width: "10px",
-        height: "10px"
-    }
+    
+    // const logo = {
+    //     width: "10px",
+    //     height: "10px"
+    // }
 
     // Content in header
     return (
