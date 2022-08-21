@@ -35,6 +35,8 @@ function Project () {
         // width: "40rem",
         // height:"350px",
         backgroundImage: "url('galaxy-header.jpg')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
     }
     const aboutMeCard = {
         display: "flex",
@@ -45,7 +47,7 @@ function Project () {
     const cardBody = {
         // backgroundImage: "url('galaxy-header.jpg')",
         backgroundColor: "black",
-        width: "45rem",
+        width: "auto",
     }
     return (
         <div style={body}>

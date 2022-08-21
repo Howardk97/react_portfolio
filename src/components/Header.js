@@ -9,7 +9,7 @@ function Header(props) {
         // display: "flex",
         // justifyContent: "center",
         // width: "50rem",
-        backgroundImage: "url('galaxy-header.jpg')",
+        backgroundColor: "#18094c",
     }
     const name = {
         fontWeight: "bold"
