@@ -1,21 +1,30 @@
-// Import in folders
+// Import in folder
 import Navigation from "./Navigation"
-import Footer from "./Footer"
 
 // Function that renders the header
 function Header(props) {
     // Styling for header
     const headingStyle = {
-        backgroundImage: "url('galaxy-header.jpg')"
+        // Adding gallaxy background
+        // display: "flex",
+        // justifyContent: "center",
+        // width: "50rem",
+        backgroundImage: "url('galaxy-header.jpg')",
+    }
+    const name = {
+        fontWeight: "bold"
     }
 
     // Content in header
     return (
         <nav>
-            <div style={headingStyle} className="nav-wrapper">
-                <p className="brand-logo center">Kimberly Howard</p>
-                <Navigation />
-            </div>
+            {/* <div style={headerCard}> */}
+                <div style={headingStyle} className="nav-wrapper">
+                    <p className="brand-logo center" style={name}>Kimberly Howard</p>
+                    <Navigation />
+                </div>
+            {/* </div> */}
+            
         </nav>
     );
 }
