@@ -22,14 +22,18 @@ function Project () {
     const aboutMe = {
         color: "white",
         fontWeight: "bold",
-        margin: "2rem"
+        margin: "2rem",
+        fontFamily: "'Bebas Neue', cursive",
+        fontSize: "50px"
     }
     const bio = {
         color: "white",
         // width: "37rem",
-        backgroundColor: "black",
         // margin: "5rem"
-        padding: "2rem"
+        padding: "2rem",
+        backgroundColor: "#250560",
+        // backgroundColor: "#2AAA8A",
+        fontFamily: "'Saira Condensed', sans-serif"
     }
     const bioCard = {
         // height: "100rem"
@@ -40,7 +44,7 @@ function Project () {
         // justifyContent: "center",
         // width: "40rem",
         // height:"350px",
-        backgroundImage: "url('galaxy-header.jpg')",
+        backgroundImage: "url('stars.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "50rem"
@@ -58,7 +62,8 @@ function Project () {
     }
 
     const bioContainer = {
-        margin: "0.5rem"
+        margin: "4rem",
+        backgroundColor: "#250560"
     }
 
     const imageContainer = {

@@ -5,14 +5,16 @@ import Navigation from "./Navigation"
 function Header(props) {
     // Styling for header
     const headingStyle = {
-        // Adding gallaxy background
-        // display: "flex",
-        // justifyContent: "center",
-        // width: "50rem",
-        backgroundColor: "#18094c",
+        backgroundColor: "#250560",
+        // backgroundColor: "#2AAA8A",
     }
     const name = {
-        fontWeight: "bold"
+        fontFamily: "'Rubik Dirt', cursive",
+        fontSize: "37px"
+    }
+    const logo = {
+        width: "10px",
+        height: "10px"
     }
 
     // Content in header
@@ -20,7 +22,11 @@ function Header(props) {
         <nav>
             {/* <div style={headerCard}> */}
                 <div style={headingStyle} className="nav-wrapper">
-                    <p className="brand-logo center" style={name}>Kimberly Howard</p>
+                    {/* <i class="fa-light fa-moon"></i> */}
+                    
+                    <p className="brand-logo center" style={name}>
+                        
+                        Kimberly Howard</p>
                     <Navigation />
                 </div>
             {/* </div> */}

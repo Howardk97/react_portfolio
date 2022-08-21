@@ -2,7 +2,8 @@
 function Navigation() {
     // Stylings
     const navLinks = {
-        fontWeight: "bold"
+        // fontWeight: "bold"
+        fontFamily: "'Bebas Neue', cursive"
     }
     return (
     <div>
