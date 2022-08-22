@@ -53,20 +53,20 @@ export default function Contact () {
     return (
     <div style={mainPage}>
         <div className="" style={formContainer}>
-            <form className="m-sm-50" style={form}>
+            <form className="m-sm-50" style={form} action="mailto:kimberlyhoward529@gmail.com" method="post" enctype="text/plain">
                 <h1 className="m-5" style={formMessage}>Send me a message!</h1>
                 <div className="mb-3 m-4">
                     <label for="exampleFormControlInput1" className="form-label" style={formText}>Name</label>
-                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="type your name here..." style={formText}/>
+                    <input type="text" name="name" className="form-control" id="exampleFormControlInput1" placeholder="type your name here..." style={formText}/>
                 </div>
                 <div className="mb-3 m-4">
                     <label for="exampleFormControlInput1" className="form-label" style={formText}>Email address</label>
-                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="type your email here..." style={formText}/>
+                    <input type="email" className="form-control" id="exampleFormControlInput1" name="mail" placeholder="type your email here..." style={formText}/>
                 </div>
                 <div className="mb-3 m-4">
-                    <label for="exampleFormControlTextarea1" className="form-label" style={formText}>Message</label>
+                    <label for="exampleFormControlTextarea1" className="form-label" style={formText} name="comment">Message</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Type message here..." rows="3"></textarea>
-                    <button style={buttonStyle} className="m-5">Send</button>
+                    <button type="submit" name="Send" style={buttonStyle} className="m-5">Send</button>
                 </div>
             </form>
         </div>
