@@ -64,8 +64,8 @@ export default function Contact () {
                     <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="type your email here..." style={formText}/>
                 </div>
                 <div className="mb-3 m-4">
-                    <label for="exampleFormControlTextarea1" className="form-label" style={formText}>Example</label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Type your message here..." rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1" className="form-label" style={formText}>Message</label>
+                    <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Type message here..." rows="3"></textarea>
                     <button style={buttonStyle} className="m-5">Send</button>
                 </div>
             </form>

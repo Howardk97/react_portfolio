@@ -3,7 +3,6 @@
 // Make conditionals based on the button click that call on render functions
 // import Header  from "./Header";
 import About from "./About";
-import Footer from "./Footer";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Resume from "./Resume";

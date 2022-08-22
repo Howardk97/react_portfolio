@@ -18,3 +18,7 @@
 .nav li.active {
     background-color: #3f69cc;
 }
+
+.main-nav-active {
+    background-color: #3f69cc;
+}
