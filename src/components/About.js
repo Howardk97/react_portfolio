@@ -1,5 +1,3 @@
-// import Header from "./Header";
-
 export default function About () {
      // Stylings for body
     const headshot = {

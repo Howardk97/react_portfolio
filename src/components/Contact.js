@@ -3,12 +3,10 @@
 export default function Contact () {
     const form = {
         backgroundColor: "#250560",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        width: "150rem",
+        width: "50rem",
         height: "35em",
         borderRadius: "10%",
-        marginTop: "5rem",
+        marginTop: "0rem",
         marginLeft: "2rem",
         marginRight: "2rem",
         fontFamily: "'Saira Condensed', sans-serif",
@@ -50,9 +48,19 @@ export default function Contact () {
         color: "white"
     }
 
+    const contact = {
+        color: "white",
+        fontWeight: "bold",
+        margin: "2rem",
+        marginBottom: "0",
+        fontFamily: "'Bebas Neue', cursive",
+        fontSize: "50px"
+    }
+
     return (
     <div style={mainPage}>
-        <div className="" style={formContainer}>
+        <div className="row" style={formContainer}>
+            <h1 className="center" style={contact}>Contact Me</h1>
             <form className="m-sm-50" style={form} action="mailto:kimberlyhoward529@gmail.com" method="post" enctype="text/plain">
                 <h1 className="m-5" style={formMessage}>Send me a message!</h1>
                 <div className="mb-3 m-4">

@@ -4,28 +4,15 @@ export default function Portfolio () {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "length|percentage|auto|initial|inherit",
-        minHeight: "40rem",
-        // height: "40rem",
-        display:"flex",
-        justifyContent: "center",
-        // alignItems: "center",
-        // padding: "1rem"
+        minHeight: "45rem",
     }
-
-    // const title = {
-    //     color: "white"
-    // }
 
     const websiteContainer = {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         flexWrap: "wrap",
-        // height: "100%",
-        // width: "100%",
         height: "length|percentage|auto|initial|inherit",
-        borderRadius: "10%",
-        // padding: "2rem"
     }
 
     const singleWebsite = {
@@ -44,13 +31,9 @@ export default function Portfolio () {
         fontSize: "50px"
     }
 
-    const mainContainer = {
-        // padding: "2rem"
-    }
-
     return (
         <div style={mainPage} className="row">
-            <div style={mainContainer}>
+            <div>
                 <h1 style={portfolio} className="card-title center">Portfolio</h1>
                 <div style={websiteContainer}>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
