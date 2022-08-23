@@ -3,8 +3,9 @@ export default function Portfolio () {
         backgroundImage: "url('stars.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "length|percentage|auto|initial|inherit",
-        minHeight: "45rem",
+        height: "50rem",
+        margin: "0",
+        // minHeight: "45rem",
     }
 
     const websiteContainer = {

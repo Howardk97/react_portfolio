@@ -6,7 +6,10 @@ function Footer() {
         justifyContent: "center",
         backgroundColor: "#250560",
         // height:"8rem"
-        height: "length|percentage|auto|initial|inherit"
+        height: "length|percentage|auto|initial|inherit",
+        // height: "50rem",
+        margin: "0"
+        // height: "5%"
     }
     const logos = {
         width: "5rem",

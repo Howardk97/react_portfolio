@@ -40,8 +40,10 @@ export default function About () {
         backgroundImage: "url('stars.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "length|percentage|auto|initial|inherit",
-        minHeight: "45rem",
+        // height: "length|percentage|auto|initial|inherit",
+        // minHeight: "45rem",
+        // height: "90%"
+        height: "50rem"
     }
     return (
         // <div className="row" style={body}>

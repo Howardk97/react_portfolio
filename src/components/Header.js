@@ -16,7 +16,7 @@ function Header() {
         fontFamily: "'Rubik Dirt', cursive",
         fontSize: "37px",
         height: "length|percentage|auto|initial|inherit",
-        // width: "75%"
+        maxWidth: "100%"
     }
     
     // const logo = {
@@ -26,8 +26,9 @@ function Header() {
 
     // Content in header
     const headerCard = {
-        // height: "length|percentage|auto|initial|inherit",
-        alignItems: "stretch"
+        height: "length|percentage|auto|initial|inherit",
+        alignItems: "stretch",
+        // height: "5%"
     }
     return (
         <nav style={headerCard}>

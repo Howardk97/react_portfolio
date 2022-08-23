@@ -3,7 +3,9 @@ export default function Resume () {
         backgroundImage: "url('stars.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "length|percentage|auto|initial|inherit",
+        height: "50rem",
+        margin: "0",
+        // minHeight: "45rem",
         display: "flex",
         justifyContent: "center",
         alignItems: "center"
@@ -30,7 +32,7 @@ export default function Resume () {
             "resume.pdf" 
                 width="800" 
                 height="500"> 
-        </object>
+            </object>
         </div>
     )
 }
