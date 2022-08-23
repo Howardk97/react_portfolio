@@ -3,9 +3,9 @@
 export default function About () {
      // Stylings for body
     const headshot = {
-        height: "length|percentage|auto|initial|inherit",
-        width: "length|percentage|auto|initial|inherit",
-        margin: "2rem",
+        // height: "length|percentage|auto|initial|inherit",
+        // width: "length|percentage|auto|initial|inherit",
+        // margin: "2rem",
         borderRadius: "75%",
     }
     const aboutMe = {
@@ -19,11 +19,16 @@ export default function About () {
         color: "white",
         padding: "2rem",
         backgroundColor: "#250560",
-        fontFamily: "'Saira Condensed', sans-serif"
+        fontFamily: "'Saira Condensed', sans-serif",
+        // borderRadius: "10%"
     }
 
     const bioContainer = {
-        margin: "4rem",
+        // margin: "4rem",
+        // marginLeft: "4rem",
+        // marginRight: "4rem",
+        // marginBottom: "4rem",
+        margin: "2rem",
         backgroundColor: "#250560",
         // borderRadius: "75%"
     }
@@ -37,11 +42,8 @@ export default function About () {
         backgroundImage: "url('stars.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "length|percentage|auto|initial|inherit"
-    }
-
-    const bioOuterContainer = {
-        padding: "2rem"
+        height: "length|percentage|auto|initial|inherit",
+        minHeight: "45rem",
     }
     return (
         // <div className="row" style={body}>
@@ -52,7 +54,7 @@ export default function About () {
                     <img style={headshot} src="headshot.jpg" alt="Kimberly's Headshot" />
                 </div>
             </div>
-            <div style={bioOuterContainer}>
+            
                 <div style={bioContainer}>
                     <p style={bio}>Kimberly Howard is a detailed-oriented mathematician with a background 
                     in education and web development. In May 2020, Kimberly graduated from 
@@ -64,7 +66,6 @@ export default function About () {
                     seeking a front-end position in web development. You can find 
                     her contact information below. </p>
                 </div>
-            </div>
         </div>
             
     );

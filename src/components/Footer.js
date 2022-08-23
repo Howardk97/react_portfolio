@@ -5,7 +5,8 @@ function Footer() {
         display: "flex",
         justifyContent: "center",
         backgroundColor: "#250560",
-        height:"8rem"
+        // height:"8rem"
+        height: "length|percentage|auto|initial|inherit"
     }
     const logos = {
         width: "5rem",

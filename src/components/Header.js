@@ -7,15 +7,16 @@ function Header() {
     const headingStyle = {
         backgroundColor: "#250560",
         display: "flex",
-        alignItems: "stretch"
+        alignItems: "stretch",
         // backgroundColor: "#2AAA8A",
-        // height: "length|percentage|auto|initial|inherit"
+        height: "length|percentage|auto|initial|inherit"
         
     }
     const name = {
         fontFamily: "'Rubik Dirt', cursive",
         fontSize: "37px",
-        height: "length|percentage|auto|initial|inherit"
+        height: "length|percentage|auto|initial|inherit",
+        // width: "75%"
     }
     
     // const logo = {
@@ -25,7 +26,7 @@ function Header() {
 
     // Content in header
     const headerCard = {
-        // height: "20rem"
+        // height: "length|percentage|auto|initial|inherit",
         alignItems: "stretch"
     }
     return (

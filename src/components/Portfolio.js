@@ -4,10 +4,12 @@ export default function Portfolio () {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "length|percentage|auto|initial|inherit",
+        minHeight: "40rem",
+        // height: "40rem",
         display:"flex",
         justifyContent: "center",
-        alignItems: "center",
-        padding: "2rem"
+        // alignItems: "center",
+        // padding: "1rem"
     }
 
     // const title = {
@@ -19,46 +21,65 @@ export default function Portfolio () {
         justifyContent: "center",
         alignItems: "center",
         flexWrap: "wrap",
+        // height: "100%",
+        // width: "100%",
         height: "length|percentage|auto|initial|inherit",
-        width: "length|percentage|auto|initial|inherit",
-        backgroundColor: "#250560",
         borderRadius: "10%",
-        padding: "2rem"
+        // padding: "2rem"
     }
 
     const singleWebsite = {
         borderRadius: "10%",
+        borderStyle: "solid",
+        borderColor: "#90EE90",
+        borderWidth: "5px",
+        margin: "5%"
+    }
+
+    const portfolio = {
+        color: "white",
+        fontWeight: "bold",
+        margin: "2rem",
+        fontFamily: "'Bebas Neue', cursive",
+        fontSize: "50px"
+    }
+
+    const mainContainer = {
+        // padding: "2rem"
     }
 
     return (
         <div style={mainPage} className="row">
-            <div style={websiteContainer} className="row col-xs-1 col-sm-6 col-md-8 col-lg-10">
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                    <a href="https://saameer19.github.io/project1/">
-                        <img style={singleWebsite} className="m-3" src="website1.png" alt="" width="200em" height="200em" ></img>
-                    </a> 
-                </div>
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                    <a className="" href="https://inventorymanagement.herokuapp.com/">
-                        <img style={singleWebsite}  className="m-3" src="website2.png" alt="" width="200em" height="200em"></img>
-                    </a>
-                </div>
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                    <a className="" href="https://howardk97.github.io/Code-Quiz/">
-                        <img style={singleWebsite}  className="m-3" src="website3.png" alt="" width="200em" height="200em"></img>
-                    </a>
-                </div>
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                    <a className="" href="https://howardk97.github.io/weather-app/">
-                        <img style={singleWebsite}  className="m-3" src="website4.png" alt="" width="200em" height="200em"></img>
-                    </a>
-                </div>
-                <div className="col-sm-12 col-md-6 col-lg-4">
-                    <a className="" href="https://howardk97.github.io/schedule-tracker/">
-                        <img style={singleWebsite}  className="m-3" src="website5.png" alt="" width="200em" height="200em"></img>
-                    </a>
+            <div style={mainContainer}>
+                <h1 style={portfolio} className="card-title center">Portfolio</h1>
+                <div style={websiteContainer}>
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <a href="https://saameer19.github.io/project1/">
+                            <img style={singleWebsite} src="website1.png" alt="movie-database" width="200em" height="200em" ></img>
+                        </a> 
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <a className="" href="https://inventorymanagement.herokuapp.com/">
+                            <img style={singleWebsite} src="website2.png" alt="inventory-website" width="200em" height="200em"></img>
+                        </a>
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <a className="" href="https://howardk97.github.io/Code-Quiz/">
+                            <img style={singleWebsite} src="website3.png" alt="quiz-webpage" width="200em" height="200em"></img>
+                        </a>
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <a className="" href="https://howardk97.github.io/weather-app/">
+                            <img style={singleWebsite} src="website4.png" alt="weather-webpage" width="200em" height="200em"></img>
+                        </a>
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <a className="" href="https://howardk97.github.io/schedule-tracker/">
+                            <img style={singleWebsite} src="website5.png" alt="schedule-tracker-webpage" width="200em" height="200em"></img>
+                        </a>
+                    </div>
                 </div>
             </div>
-            </div>
+        </div>
     );
 }
