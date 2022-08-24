@@ -28,8 +28,7 @@ export default function Resume () {
     return (
         <div style={mainPage} className="row">
             <h1 style={resume} className="center">Resume</h1>
-            <object style={resumePdf} className="col-7" data=
-            "test.pdf" 
+            <object style={resumePdf} className="col-7" data="resume.pdf" 
                 width="800" 
                 height="500"> 
             </object>
