@@ -29,7 +29,7 @@ export default function Resume () {
         <div style={mainPage} className="row">
             <h1 style={resume} className="center">Resume</h1>
             <object style={resumePdf} className="col-7" data=
-            "resume.pdf" 
+            "test.pdf" 
                 width="800" 
                 height="500"> 
             </object>
