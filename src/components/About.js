@@ -1,6 +1,8 @@
+import headshot from "../public/headshot.jpg"
+
 export default function About () {
      // Stylings for body
-    const headshot = {
+    const headshotContainer = {
         // height: "length|percentage|auto|initial|inherit",
         // width: "length|percentage|auto|initial|inherit",
         // margin: "2rem",
@@ -51,7 +53,7 @@ export default function About () {
             <div className="row center" style={imageContainer}>
                 <h1 className="card-title" style={aboutMe}>About Me</h1>
                 <div className="card-image" style={imageContainer}>
-                    <img style={headshot} src="headshot.jpg" alt="Kimberly's Headshot" />
+                    <img style={headshotContainer} src={headshot} alt="Kimberly's Headshot" />
                 </div>
             </div>
             

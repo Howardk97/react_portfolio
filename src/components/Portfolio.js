@@ -39,7 +39,7 @@ export default function Portfolio () {
                 <div style={websiteContainer}>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                         <a href="https://saameer19.github.io/project1/">
-                            <img style={singleWebsite} src="website1.png" alt="movie-database" width="200em" height="200em" ></img>
+                            <img style={singleWebsite} src="../../public/website1.png" alt="movie-database" width="200em" height="200em" ></img>
                         </a> 
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">

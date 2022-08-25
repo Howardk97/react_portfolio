@@ -40,6 +40,7 @@ const mainPage = {
       console.log("trying to access resume page")
       break
     default:
+      Component = About
       console.log("click one of the navigation links")
   }
   console.log(window.location);
