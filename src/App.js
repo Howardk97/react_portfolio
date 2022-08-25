@@ -64,7 +64,7 @@ function App() {
       <Header style={all} />
       <Routes>
         <Route 
-        path="/"
+        path="/react_portfolio"
         element={<About />} 
         />
         <Route
