@@ -1,6 +1,13 @@
+import stars from "../public/stars.jpg";
+import website1 from "../public/website1.png";
+import website2 from "../public/website2.png";
+import website3 from "../public/website3.png";
+import website4 from "../public/website4.png";
+import website5 from "../public/website5.png";
+
 export default function Portfolio () {
     const mainPage = {
-        backgroundImage: "url('stars.jpg')",
+        backgroundImage: `url(${stars})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "50rem",
@@ -39,27 +46,27 @@ export default function Portfolio () {
                 <div style={websiteContainer}>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                         <a href="https://saameer19.github.io/project1/">
-                            <img style={singleWebsite} src="../../public/website1.png" alt="movie-database" width="200em" height="200em" ></img>
+                            <img style={singleWebsite} src={website1} alt="movie-database" width="200em" height="200em" ></img>
                         </a> 
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                         <a className="" href="https://inventorymanagement.herokuapp.com/">
-                            <img style={singleWebsite} src="website2.png" alt="inventory-website" width="200em" height="200em"></img>
+                            <img style={singleWebsite} src={website2} alt="inventory-website" width="200em" height="200em"></img>
                         </a>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                         <a className="" href="https://howardk97.github.io/Code-Quiz/">
-                            <img style={singleWebsite} src="website3.png" alt="quiz-webpage" width="200em" height="200em"></img>
+                            <img style={singleWebsite} src={website3} alt="quiz-webpage" width="200em" height="200em"></img>
                         </a>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                         <a className="" href="https://howardk97.github.io/weather-app/">
-                            <img style={singleWebsite} src="website4.png" alt="weather-webpage" width="200em" height="200em"></img>
+                            <img style={singleWebsite} src={website4} alt="weather-webpage" width="200em" height="200em"></img>
                         </a>
                     </div>
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                         <a className="" href="https://howardk97.github.io/schedule-tracker/">
-                            <img style={singleWebsite} src="website5.png" alt="schedule-tracker-webpage" width="200em" height="200em"></img>
+                            <img style={singleWebsite} src={website5} alt="schedule-tracker-webpage" width="200em" height="200em"></img>
                         </a>
                     </div>
                 </div>

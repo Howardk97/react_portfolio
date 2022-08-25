@@ -1,4 +1,5 @@
 import headshot from "../public/headshot.jpg"
+import stars from "../public/stars.jpg"
 
 export default function About () {
      // Stylings for body
@@ -39,7 +40,7 @@ export default function About () {
     }
 
     const mainPage = {
-        backgroundImage: "url('stars.jpg')",
+        backgroundImage: `url(${stars})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         // height: "length|percentage|auto|initial|inherit",
@@ -49,7 +50,7 @@ export default function About () {
     }
     return (
         // <div className="row" style={body}>
-        <div className="col s12 m7" style={mainPage}>
+        <div className="col s12 m7 background" style={mainPage}>
             <div className="row center" style={imageContainer}>
                 <h1 className="card-title" style={aboutMe}>About Me</h1>
                 <div className="card-image" style={imageContainer}>

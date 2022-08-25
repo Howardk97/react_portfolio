@@ -1,4 +1,6 @@
 // import Router from "react-dom";
+import githubLogo from "../public/github.png";
+import linkedinLogo from "../public/linkedin.png";
 
 function Footer() {
     const imageContainer = {
@@ -20,8 +22,8 @@ function Footer() {
         // <Router>
             <div style={imageContainer}>
                 {/* Problem: Will not access link */}
-                <img src="github.png" alt="github logo" style={logos} />
-                <img src="linkedin.png" alt="linkedin logo" style={logos} />
+                <img src={githubLogo} alt="github logo" style={logos} />
+                <img src={linkedinLogo} alt="linkedin logo" style={logos} />
             </div>
         // {/* </Router> */}
     );

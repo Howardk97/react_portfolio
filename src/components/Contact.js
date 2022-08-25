@@ -1,4 +1,5 @@
 // import Header from "./Header"
+import stars from "../public/stars.jpg"
 
 export default function Contact () {
     const form = {
@@ -36,7 +37,7 @@ export default function Contact () {
     }
 
     const mainPage = {
-        backgroundImage: "url('stars.jpg')",
+        backgroundImage: `url(${stars})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "50rem",

@@ -1,6 +1,9 @@
+import stars from "../public/stars.jpg"
+import resumeDoc from "../public/resume.pdf"
+
 export default function Resume () {
     const mainPage = {
-        backgroundImage: "url('stars.jpg')",
+        backgroundImage: `url(${stars})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "50rem",
@@ -28,7 +31,7 @@ export default function Resume () {
     return (
         <div style={mainPage} className="row">
             <h1 style={resume} className="center">Resume</h1>
-            <object style={resumePdf} className="col-7" data="resume.pdf" 
+            <object style={resumePdf} className="col-7" data={resumeDoc} 
                 width="800" 
                 height="500"> 
             </object>
