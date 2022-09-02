@@ -4,6 +4,7 @@ import website2 from "../public/website2.png";
 import website3 from "../public/website3.png";
 import website4 from "../public/website4.png";
 import website5 from "../public/website5.png";
+import website6 from "../public/stay-in-touch.png";
 
 export default function Portfolio () {
     const mainPage = {
@@ -67,6 +68,11 @@ export default function Portfolio () {
                     <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                         <a className="" href="https://howardk97.github.io/schedule-tracker/">
                             <img style={singleWebsite} src={website5} alt="schedule-tracker-webpage" width="200em" height="200em"></img>
+                        </a>
+                    </div>
+                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <a className="" href="https://stayintouchnetwork.herokuapp.com/">
+                            <img style={singleWebsite} src={website6} alt="stay-int-touch-website" width="200em" height="200em"></img>
                         </a>
                     </div>
                 </div>

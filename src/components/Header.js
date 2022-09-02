@@ -8,6 +8,7 @@ function Header() {
         backgroundColor: "#250560",
         display: "flex",
         alignItems: "stretch",
+        flexWrap: "wrap",
         // backgroundColor: "#2AAA8A",
         height: "length|percentage|auto|initial|inherit"
         
