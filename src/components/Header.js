@@ -8,28 +8,18 @@ function Header() {
         backgroundColor: "#250560",
         display: "flex",
         alignItems: "stretch",
-        flexWrap: "wrap",
-        // backgroundColor: "#2AAA8A",
         height: "length|percentage|auto|initial|inherit"
         
     }
     const name = {
         fontFamily: "'Rubik Dirt', cursive",
-        fontSize: "37px",
-        height: "length|percentage|auto|initial|inherit",
-        maxWidth: "100%"
+        fontSize: "20px"
     }
-    
-    // const logo = {
-    //     width: "10px",
-    //     height: "10px"
-    // }
 
     // Content in header
     const headerCard = {
         height: "length|percentage|auto|initial|inherit",
-        alignItems: "stretch",
-        // height: "5%"
+        alignItems: "stretch"
     }
     return (
         <nav style={headerCard}>
