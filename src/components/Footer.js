@@ -20,7 +20,8 @@ function Footer() {
     }
     return (
         // <Router>
-            <div style={imageContainer}>
+            <div style={imageContainer}
+                className="sticky-bottom">
                 {/* Problem: Will not access link */}
                 <img src={githubLogo} alt="github logo" style={logos} />
                 <img src={linkedinLogo} alt="linkedin logo" style={logos} />

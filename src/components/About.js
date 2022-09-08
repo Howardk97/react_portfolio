@@ -43,10 +43,10 @@ export default function About () {
         backgroundImage: `url(${stars})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        // height: "length|percentage|auto|initial|inherit",
+        height: "length|percentage|auto|initial|inherit",
         // minHeight: "45rem",
         // height: "90%"
-        height: "50rem"
+        minHeight: "90rem"
     }
     return (
         // <div className="row" style={body}>

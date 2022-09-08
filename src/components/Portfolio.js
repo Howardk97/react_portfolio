@@ -108,7 +108,9 @@ export default function Portfolio () {
         borderStyle: "solid",
         borderColor: "#90EE90",
         borderWidth: "5px",
-        margin: "5%"
+        margin: "5%",
+        width: "200px",
+        height: "200px"
     }
 
     const portfolio = {
