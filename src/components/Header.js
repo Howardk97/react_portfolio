@@ -5,7 +5,6 @@ import Navigation from "./Navigation"
 function Header() {
     // Styling for header
     const headingStyle = {
-        backgroundColor: "#250560",
         display: "flex",
         alignItems: "stretch",
         height: "length|percentage|auto|initial|inherit"
@@ -24,7 +23,7 @@ function Header() {
     return (
         <nav style={headerCard}>
             {/* <div style={headerCard}> */}
-                <div style={headingStyle} className="nav-wrapper">
+                <div style={headingStyle} className="bg-indigo-900 nav-wrapper">
                     {/* <i class="fa-light fa-moon"></i> */}
                     <p className="brand-logo center" style={name}>Kimberly Howard</p>
                     <Navigation />

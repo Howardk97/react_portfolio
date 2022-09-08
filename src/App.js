@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
 import { InMemoryCache, ApolloClient, ApolloProvider } from '@apollo/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -61,7 +62,7 @@ function App() {
   
   <ApolloProvider client={client}>
     <Router>
-      <Header style={all} />
+      <Navigation />
       <Routes>
         <Route 
         path="/"
