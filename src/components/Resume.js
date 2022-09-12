@@ -1,5 +1,5 @@
 import stars from "../public/stars.jpg"
-import resumeDoc from "../public/full-stack-resume-aug-22.pdf"
+import resumeDoc from "../public/full-stack-resume-sep-12.pdf"
 
 export default function Resume () {
     const mainPage = {

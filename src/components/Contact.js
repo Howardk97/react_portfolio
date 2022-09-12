@@ -3,11 +3,10 @@ import stars from "../public/stars.jpg"
 
 export default function Contact () {
     const form = {
-        backgroundColor: "#250560",
+        // backgroundColor: "#250560",
         width: "50rem",
-        height: "35em",
+        height: "35rem",
         borderRadius: "10%",
-        marginTop: "0rem",
         marginLeft: "2rem",
         marginRight: "2rem",
         fontFamily: "'Saira Condensed', sans-serif",
@@ -19,8 +18,7 @@ export default function Contact () {
         backgroundImage: "url('stars.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "50rem",
-        margin: "0",
+        height: "50rem"
     }
 
     const formText = {
@@ -40,20 +38,18 @@ export default function Contact () {
         backgroundImage: `url(${stars})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "50rem",
-        margin: "0",
+        height: "60rem",
     }
 
     const formMessage = {
-        fontSize: "30px",
+        fontSize: "20px",
         color: "white"
     }
 
     const contact = {
         color: "white",
         fontWeight: "bold",
-        margin: "2rem",
-        marginBottom: "0",
+        marginTop: "5rem",
         fontFamily: "'Bebas Neue', cursive",
         fontSize: "50px"
     }
@@ -62,7 +58,7 @@ export default function Contact () {
     <div style={mainPage}>
         <div className="row" style={formContainer}>
             <h1 className="center" style={contact}>Contact Me</h1>
-            <form className="m-sm-50" style={form} action="mailto:kimberlyhoward529@gmail.com" method="post" enctype="text/plain">
+            <form className="bg-indigo-900" style={form} action="mailto:kimberlyhoward529@gmail.com" method="post" enctype="text/plain">
                 <h1 className="m-5" style={formMessage}>Send me a message!</h1>
                 <div className="mb-3 m-4">
                     <label for="exampleFormControlInput1" className="form-label" style={formText}>Name</label>

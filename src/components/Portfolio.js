@@ -115,7 +115,7 @@ export default function Portfolio () {
     const portfolio = {
         color: "white",
         fontWeight: "bold",
-        margin: "2rem",
+        marginTop: "5rem",
         fontFamily: "'Bebas Neue', cursive",
         fontSize: "50px"
     }

@@ -120,7 +120,7 @@ function Navigation() {
             </nav>
             )} else {
                 navbarComp = (
-                    <nav style={navbarContainer} className="flex bg-indigo-900 nav sticky-top">
+                    <nav style={navbarContainer} className="flex bg-indigo-900 nav fixed-top">
                         <h1 style={name} className='self-center m-3'>Kimberly Howard</h1>
                         <ul className="flex" style={navLinks}>
                             <li className="hover:bg-indigo-400">
