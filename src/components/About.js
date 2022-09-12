@@ -22,7 +22,7 @@ export default function About () {
     const aboutMe = {
         color: "white",
         fontWeight: "bold",
-        // margin: "2rem",
+        marginTop: "7rem",
         fontFamily: "'Bebas Neue', cursive",
         fontSize: "50px"
     }
@@ -38,6 +38,9 @@ export default function About () {
         // borderRadius: "25%"
     }
 
+    const bioContainerBig = {
+        // marginTop: "10rem"
+    }
     const imageContainer = {
         // display: "flex",
         // justifyContent: "center"
@@ -48,9 +51,14 @@ export default function About () {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "length|percentage|auto|initial|inherit",
-        minHeight: "60rem",
+        minHeight: "50rem",
         // minHeight: "100%"
         // height: "auto"
+    }
+
+    const picBio = {
+        marginLeft: "2rem",
+        marginRight: "2rem"
     }
 
     let aboutComp;
@@ -91,29 +99,40 @@ export default function About () {
         )
     } else {
         aboutComp = (
-            <div 
-            className="flex justify-center items-center"
-            // className="col s12 m7 background flex-row" 
-            style={mainPage}>
-            <div 
-                className="m-5"
-                // className="row center" 
-                style={imageContainer}>
+            <div style={mainPage}
+                className="flex row">
                 <h1 
-                    className="card-title" 
+                    className="card-title center" 
                     style={aboutMe}>
                     About me
                 </h1>
+                <div 
+                // className='flex-row'
+            className="flex justify-center"
+            // className="col s12 m7 background flex-row" 
+            // style={mainPage}
+            style={picBio}
+            >
+            <div 
+                // className="m-5"
+                // className="row center" 
+                style={imageContainer}>
+                {/* <h1 
+                    className="card-title" 
+                    style={aboutMe}>
+                    About me
+                </h1> */}
                 <div className="card-image" 
                     style={imageContainer}>
                     <img style={headshotContainer} 
                         src={headshot} 
-                        alt="Kimberly's Headshot" />
+                        alt="Kimberly's Headshot"
+                        className='mr-5' />
                 </div>
             </div>
             
-                <div style={bioContainer}
-                    className="w-50 m-5">
+                <div style={bioContainerBig}
+                    className="w-75 ml-5">
                     <p style={bio}
                         className="bg-indigo-900">Hello and welcome to my portfolio! 
                     I am a detailed-oriented mathematician with a background 
@@ -136,6 +155,7 @@ export default function About () {
                     </p>
                 </div>
         </div>
+            </div>
         )
     }
 
