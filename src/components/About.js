@@ -4,9 +4,6 @@ import stars from "../public/stars.jpg"
 export default function About () {
      // Stylings for body
     const headshotContainer = {
-        // height: "length|percentage|auto|initial|inherit",
-        // width: "length|percentage|auto|initial|inherit",
-        // margin: "2rem",
         borderRadius: "75%",
     }
     const aboutMe = {
@@ -25,13 +22,8 @@ export default function About () {
     }
 
     const bioContainer = {
-        // margin: "4rem",
-        // marginLeft: "4rem",
-        // marginRight: "4rem",
-        // marginBottom: "4rem",
         margin: "2rem",
         backgroundColor: "#250560",
-        // borderRadius: "75%"
     }
 
     const imageContainer = {
@@ -44,12 +36,9 @@ export default function About () {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "length|percentage|auto|initial|inherit",
-        // minHeight: "45rem",
-        // height: "90%"
         minHeight: "90rem"
     }
     return (
-        // <div className="row" style={body}>
         <div className="col s12 m7 background" style={mainPage}>
             <div className="row center" style={imageContainer}>
                 <h1 className="card-title" style={aboutMe}>About Me</h1>

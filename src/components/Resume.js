@@ -8,7 +8,6 @@ export default function Resume () {
         backgroundSize: "cover",
         height: "50rem",
         margin: "0",
-        // minHeight: "45rem",
         display: "flex",
         justifyContent: "center",
         alignItems: "center"

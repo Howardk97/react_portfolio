@@ -15,7 +15,6 @@ export default function Portfolio () {
     const [hoverWeather, setHoverWeather] = useState(false);
     const [hoverSchedule, setHoverSchedule] = useState(false);
     const [hoverInTouch, setHoverInTouch] = useState(false);
-    // console.log(hover);
 
     const onHoverMovie = (e) => {
         e.preventDefault();
