@@ -6,21 +6,23 @@ function Footer() {
     const imageContainer = {
         display: "flex",
         justifyContent: "center",
-        backgroundColor: "#250560",
         height: "length|percentage|auto|initial|inherit",
         margin: "0"
     }
     const logos = {
-        width: "5rem",
-        height: "5rem",
-        margin: "1.5rem"
+        width: "3rem",
+        height: "3rem",
+        margin: "1rem"
     }
     return (
             <div style={imageContainer}
-                className="sticky-bottom">
-                {/* Problem: Will not access link */}
-                <img src={githubLogo} alt="github logo" style={logos} />
-                <img src={linkedinLogo} alt="linkedin logo" style={logos} />
+                className="sticky-bottom bg-indigo-900">
+                <a href="https://github.com/Howardk97">
+                    <img src={githubLogo} alt="github logo" style={logos} />
+                </a>
+                <a href="https://www.linkedin.com/in/kimberly-howard-b27776b9/">
+                    <img src={linkedinLogo} alt="linkedin logo" style={logos} />
+                </a>
             </div>
     );
 }
