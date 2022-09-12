@@ -24,13 +24,15 @@ export default function About () {
         fontWeight: "bold",
         marginTop: "7rem",
         fontFamily: "'Bebas Neue', cursive",
-        fontSize: "50px"
+        fontSize: "50px",
     }
     const bio = {
         color: "white",
         padding: "2rem",
         fontFamily: "'Saira Condensed', sans-serif",
-        borderRadius: "10%"
+        borderRadius: "10%",
+        border: "solid",
+        borderColor: "grey"
     }
 
     const bioContainer = {
@@ -46,14 +48,24 @@ export default function About () {
         // justifyContent: "center"
     }
 
-    const mainPage = {
+    const mainPageBig = {
         backgroundImage: `url(${stars})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "length|percentage|auto|initial|inherit",
         minHeight: "50rem",
         // minHeight: "100%"
-        // height: "auto"
+        // height: "%"
+    }
+
+    const mainPageSmall = {
+        backgroundImage: `url(${stars})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        height: "length|percentage|auto|initial|inherit",
+        minHeight: "60rem",
+        // minHeight: "100%"
+        // height: "%"
     }
 
     const picBio = {
@@ -64,9 +76,9 @@ export default function About () {
     let aboutComp;
     if(width < 1000) {
         aboutComp = (
-            <div style={mainPage}
+            <div style={mainPageSmall}
                 className="flex justify-center items-center row h-200 relative">
-                <h1 className='text-white col-12 center mt-10'
+                <h1 className='text-white col-12 center my-7'
                     style={aboutMe}>About Me</h1>
                 <img className='col-12 w-50 h-70' 
                         style={headshotContainer} 
@@ -99,7 +111,7 @@ export default function About () {
         )
     } else {
         aboutComp = (
-            <div style={mainPage}
+            <div style={mainPageBig}
                 className="flex row">
                 <h1 
                     className="card-title center" 

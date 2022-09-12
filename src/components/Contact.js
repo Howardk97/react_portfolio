@@ -10,6 +10,8 @@ export default function Contact () {
         marginLeft: "2rem",
         marginRight: "2rem",
         fontFamily: "'Saira Condensed', sans-serif",
+        border: "solid",
+        borderColor: "grey"
     }
 
     const formContainer = {

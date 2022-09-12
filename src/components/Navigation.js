@@ -17,12 +17,14 @@ function Navigation() {
     }
 
     const navbarContainer = {
-        backgroundColor: "#312e81"
+        // backgroundColor: "#312e81"
+        width: "100%",
+        height: "8%"
     }
 
     const name = {
         fontFamily: "'Rubik Dirt', cursive",
-        fontSize: "20px",
+        fontSize: "30px",
         color: "white"
     }
 
@@ -30,7 +32,8 @@ function Navigation() {
     let navbarComp;
         if(width < 300) {
             navbarComp = (
-                <nav className="flex items-center navbar navbar-expand-lg bg-indigo-900 sticky-top">
+                <nav className="flex items-center navbar navbar-expand-lg bg-indigo-900 sticky-top"
+                    style={navbarContainer}>
                     <button className="bg-indigo-500 mx-3 navbar-toggler hover:bg-indigo-400 focus:bg-indigo-600" 
                         type="button" 
                         data-bs-toggle="offcanvas" 
@@ -73,7 +76,8 @@ function Navigation() {
                 </nav>
         )} else if(width < 1000) {
             navbarComp = (
-            <nav className="flex items-center navbar navbar-expand-lg bg-indigo-900 sticky-top">
+            <nav className="flex items-center navbar navbar-expand-lg bg-indigo-900 sticky-top"
+            style={navbarContainer}>
                 <h1 style={name} 
                     className="navbar-brand mx-3">
                     Kimberly Howard

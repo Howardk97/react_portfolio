@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import stars from "../public/stars.jpg";
 import website1 from "../public/website1.png";
 import website2 from "../public/website2.png";
@@ -82,6 +82,16 @@ export default function Portfolio () {
         setHoverInTouch(false);
     }
     
+    // Set width value
+    const [width, setWidth] = React.useState(window.innerWidth);
+
+    React.useEffect(() => {
+        window.addEventListener("resize", updateWidth)
+    });
+
+    const updateWidth = () => {
+        setWidth(window.innerWidth);
+    };
 
     // Styling
     const mainPage = {
@@ -90,7 +100,7 @@ export default function Portfolio () {
         backgroundSize: "cover",
         // height: "50rem",
         height: "length|percentage|auto|initial|inherit",
-        minHeight: "40rem",
+        minHeight: "60rem",
         margin: "0",
     }
 
@@ -100,14 +110,16 @@ export default function Portfolio () {
         alignItems: "center",
         flexWrap: "wrap",
         height: "length|percentage|auto|initial|inherit",
+        // maxHeight: "200rem"
     }
 
     const singleWebsite = {
         borderRadius: "10%",
-        borderStyle: "solid",
-        borderColor: "#90EE90",
-        borderWidth: "5px",
-        margin: "5%",
+        border: "solid",
+        // borderColor: "#90EE90",
+        borderColor: "grey",
+        // borderWidth: "4px",
+        marginTop: "2rem",
         width: "200px",
         height: "200px"
     }
@@ -115,7 +127,7 @@ export default function Portfolio () {
     const portfolio = {
         color: "white",
         fontWeight: "bold",
-        marginTop: "5rem",
+        marginTop: "7rem",
         fontFamily: "'Bebas Neue', cursive",
         fontSize: "50px"
     }
@@ -125,17 +137,26 @@ export default function Portfolio () {
         padding: "2rem",
         backgroundColor: "#250560",
         fontFamily: "'Saira Condensed', sans-serif",
+        width: "200px",
+        height: "length|percentage|auto|initial|inherit",
+        minHeight: "200px",
+        marginTop: "2rem",
+        marginLeft: "1rem",
+        borderRadius: "10%"
         // borderRadius: "10%"
     }
 
-    return (
-        <div style={mainPage} className="row">
+    let portfolioComp;
+    if(width < 540) {
+
+        portfolioComp = (<div style={mainPage} className="flex row">
             <div>
                 <h1 
                 style={portfolio} className="card-title center">Portfolio</h1>
                 <div style={websiteContainer}>
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <a href="https://github.com/Howardk97/project1">
+                    <div className="col-12">
+                        <a href="https://github.com/Howardk97/project1"
+                            className='flex justify-center'>
                             <img 
                             onMouseEnter={(e) => onHoverMovie(e)}
                             onMouseLeave={(e) => onHoverOverMovie(e)}
@@ -151,7 +172,240 @@ export default function Portfolio () {
                             </p>}
                         </a> 
                     </div>
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-12">
+                        <a
+                        className="flex justify-center" 
+                        href="https://inventorymanagement.herokuapp.com/">
+                            <img
+                            onMouseEnter={(e) => onHoverInventory(e)}
+                            onMouseLeave={(e) => onHoverOverInventory(e)}
+                            style={singleWebsite} 
+                            src={website2} 
+                            alt="inventory-website" 
+                            width="200em" 
+                            height="200em"
+                            ></img>
+                            {hoverInventory && <p style={description} className="hover">
+                                This application is a an inventory management system for a catering company. 
+                                This app is deployed through Heroku, as it runs on a full front- and 
+                                back-end MVC structure.
+                            </p>}
+                        </a>
+                    </div>
+                    <div className="col-12">
+                        <a className="flex justify-center" href="https://howardk97.github.io/Code-Quiz/">
+                            <img 
+                            onMouseEnter={(e) => onHoverQuiz(e)}
+                            onMouseLeave={(e) => onHoverOverQuiz(e)}
+                            style={singleWebsite} 
+                            src={website3} 
+                            alt="quiz-webpage" 
+                            width="200em" 
+                            height="200em"></img>
+                            {hoverQuiz && <p style={description} className="hover">
+                                This webpage is a timed code quiz for entry-level front-end developers. 
+                                Take this quiz carefully, as time will be deducted for each incorrect
+                                answer response.
+                            </p>}
+                        </a>
+                    </div>
+                    <div className="col-12">
+                        <a className="flex justify-center" href="https://howardk97.github.io/weather-app/">
+                            <img 
+                            onMouseEnter={(e) => onHoverWeather(e)}
+                            onMouseLeave={(e) => onHoverOverWeather(e)}
+                            style={singleWebsite} 
+                            src={website4} 
+                            alt="weather-webpage" 
+                            width="200em" 
+                            height="200em"></img>
+                            {hoverWeather && <p style={description} className="hover">
+                                This is a weather app that allows you to look up temperatures
+                                for any city around the world.
+                            </p>}
+                        </a>
+                    </div>
+                    <div className="col-12">
+                        <a className="flex justify-center" href="https://howardk97.github.io/schedule-tracker/">
+                            <img 
+                            onMouseEnter={(e) => onHoverSchedule(e)}
+                            onMouseLeave={(e) => onHoverOverSchedule(e)}
+                            style={singleWebsite} 
+                            src={website5} 
+                            alt="schedule-tracker-webpage" 
+                            width="200em" 
+                            height="200em"></img>
+                            {hoverSchedule && <p style={description} className="hover">
+                                This application allows you to keep track of your daily schedule.
+                                It allows you to add what you need to do in the listed time slots
+                                and the time slots are color coded based on the time of day.
+                            </p>}
+                        </a>
+                    </div>
+                    <div className="col-12">
+                        <a className="flex justify-center" href="https://stayintouchnetwork.herokuapp.com/">
+                            <img 
+                            onMouseEnter={(e) => onHoverInTouch(e)}
+                            onMouseLeave={(e) => onHoverOverInTouch(e)}
+                            style={singleWebsite} 
+                            src={website6} 
+                            alt="stay-int-touch-website" 
+                            width="200em" 
+                            height="200em"
+                            className='mb-20'></img>
+                            {hoverInTouch && <p style={description} className="hover">
+                            This project is a way for graduates of our coding bootcamp cohort to stay 
+                            in touch after graduation! Users will be able to make posts, add friends, 
+                            keep a list of favorite posts, and more!
+                            </p>}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>)
+    } else if (width < 720) {
+        portfolioComp = (<div style={mainPage} className="flex row">
+            <div>
+                <h1 
+                style={portfolio} className="card-title center">Portfolio</h1>
+                <div style={websiteContainer}>
+                    <div className="col-sm-6">
+                        <a href="https://github.com/Howardk97/project1"
+                            className='flex justify-center row'>
+                            <img 
+                            onMouseEnter={(e) => onHoverMovie(e)}
+                            onMouseLeave={(e) => onHoverOverMovie(e)}
+                            style={singleWebsite} 
+                            src={website1} 
+                            alt="movie-database" 
+                            width="200em" 
+                            height="200em" ></img>
+                            {hoverMovie && <p style={description} className="hover">
+                                This application is a movie database that allows you to search any
+                                movie or tv-show to find out general information about it such as
+                                critic reviews, rating, description, and much more.
+                            </p>}
+                        </a> 
+                    </div>
+                    <div className="col-sm-6">
+                        <a
+                        className="flex justify-center row" 
+                        href="https://inventorymanagement.herokuapp.com/">
+                            <img
+                            onMouseEnter={(e) => onHoverInventory(e)}
+                            onMouseLeave={(e) => onHoverOverInventory(e)}
+                            style={singleWebsite} 
+                            src={website2} 
+                            alt="inventory-website" 
+                            width="200em" 
+                            height="200em"
+                            ></img>
+                            {hoverInventory && <p style={description} className="hover">
+                                This application is a an inventory management system for a catering company. 
+                                This app is deployed through Heroku, as it runs on a full front- and 
+                                back-end MVC structure.
+                            </p>}
+                        </a>
+                    </div>
+                    <div className="col-sm-6">
+                        <a className="flex justify-center row" href="https://howardk97.github.io/Code-Quiz/">
+                            <img 
+                            onMouseEnter={(e) => onHoverQuiz(e)}
+                            onMouseLeave={(e) => onHoverOverQuiz(e)}
+                            style={singleWebsite} 
+                            src={website3} 
+                            alt="quiz-webpage" 
+                            width="200em" 
+                            height="200em"></img>
+                            {hoverQuiz && <p style={description} className="hover">
+                                This webpage is a timed code quiz for entry-level front-end developers. 
+                                Take this quiz carefully, as time will be deducted for each incorrect
+                                answer response.
+                            </p>}
+                        </a>
+                    </div>
+                    <div className="col-sm-6">
+                        <a className="flex justify-center row" href="https://howardk97.github.io/weather-app/">
+                            <img 
+                            onMouseEnter={(e) => onHoverWeather(e)}
+                            onMouseLeave={(e) => onHoverOverWeather(e)}
+                            style={singleWebsite} 
+                            src={website4} 
+                            alt="weather-webpage" 
+                            width="200em" 
+                            height="200em"></img>
+                            {hoverWeather && <p style={description} className="hover">
+                                This is a weather app that allows you to look up temperatures
+                                for any city around the world.
+                            </p>}
+                        </a>
+                    </div>
+                    <div className="col-sm-6">
+                        <a className="flex justify-center row" href="https://howardk97.github.io/schedule-tracker/">
+                            <img 
+                            onMouseEnter={(e) => onHoverSchedule(e)}
+                            onMouseLeave={(e) => onHoverOverSchedule(e)}
+                            style={singleWebsite} 
+                            src={website5} 
+                            alt="schedule-tracker-webpage" 
+                            width="200em" 
+                            height="200em"
+                            // className='mb-20'
+                            ></img>
+                            {hoverSchedule && <p style={description} className="hover">
+                                This application allows you to keep track of your daily schedule.
+                                It allows you to add what you need to do in the listed time slots
+                                and the time slots are color coded based on the time of day.
+                            </p>}
+                        </a>
+                    </div>
+                    <div className="col-sm-6">
+                        <a className="flex justify-center row" href="https://stayintouchnetwork.herokuapp.com/">
+                            <img 
+                            onMouseEnter={(e) => onHoverInTouch(e)}
+                            onMouseLeave={(e) => onHoverOverInTouch(e)}
+                            style={singleWebsite} 
+                            src={website6} 
+                            alt="stay-int-touch-website" 
+                            width="200em" 
+                            height="200em"
+                            // className='mb-20'
+                            ></img>
+                            {hoverInTouch && <p style={description} className="hover">
+                            This project is a way for graduates of our coding bootcamp cohort to stay 
+                            in touch after graduation! Users will be able to make posts, add friends, 
+                            keep a list of favorite posts, and more!
+                            </p>}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>)
+    } else {
+        portfolioComp = (<div style={mainPage} className="flex row">
+            <div>
+                <h1 
+                style={portfolio} className="card-title center">Portfolio</h1>
+                <div style={websiteContainer}>
+                    <div className="col-md-4 col-lg-3 col-xl-2">
+                        <a href="https://github.com/Howardk97/project1"
+                            className=''>
+                            <img 
+                            onMouseEnter={(e) => onHoverMovie(e)}
+                            onMouseLeave={(e) => onHoverOverMovie(e)}
+                            style={singleWebsite} 
+                            src={website1} 
+                            alt="movie-database" 
+                            width="200em" 
+                            height="200em" ></img>
+                            {hoverMovie && <p style={description} className="hover">
+                                This application is a movie database that allows you to search any
+                                movie or tv-show to find out general information about it such as
+                                critic reviews, rating, description, and much more.
+                            </p>}
+                        </a> 
+                    </div>
+                    <div className="col-md-4 col-lg-3 col-xl-2">
                         <a
                         className="" 
                         href="https://inventorymanagement.herokuapp.com/">
@@ -171,7 +425,7 @@ export default function Portfolio () {
                             </p>}
                         </a>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-md-4 col-lg-3 col-xl-2">
                         <a className="" href="https://howardk97.github.io/Code-Quiz/">
                             <img 
                             onMouseEnter={(e) => onHoverQuiz(e)}
@@ -188,7 +442,7 @@ export default function Portfolio () {
                             </p>}
                         </a>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-md-4 col-lg-3 col-xl-2">
                         <a className="" href="https://howardk97.github.io/weather-app/">
                             <img 
                             onMouseEnter={(e) => onHoverWeather(e)}
@@ -204,7 +458,7 @@ export default function Portfolio () {
                             </p>}
                         </a>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-md-4 col-lg-3 col-xl-2">
                         <a className="" href="https://howardk97.github.io/schedule-tracker/">
                             <img 
                             onMouseEnter={(e) => onHoverSchedule(e)}
@@ -221,7 +475,7 @@ export default function Portfolio () {
                             </p>}
                         </a>
                     </div>
-                    <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-md-4 col-lg-3 col-xl-2">
                         <a className="" href="https://stayintouchnetwork.herokuapp.com/">
                             <img 
                             onMouseEnter={(e) => onHoverInTouch(e)}
@@ -240,6 +494,7 @@ export default function Portfolio () {
                     </div>
                 </div>
             </div>
-        </div>
-    );
+        </div>)
+    }
+    return <div>{portfolioComp}</div>;
 }

@@ -17,20 +17,25 @@ function Footer() {
     const imageContainer = {
         display: "flex",
         justifyContent: "center",
-        height: "length|percentage|auto|initial|inherit",
-        margin: "0rem"
+        // height: "length|percentage|auto|initial|inherit",
+        margin: "0rem",
+        width: "100%",
+        height: "8%"
     }
     const logos = {
         width: "3rem",
         height: "3rem",
         margin: "1rem"
     }
-
+    const footerContainer = {
+        width: "100%",
+        height: "8%"
+    }
     let footerComp;
     if(width < 1000) {
         footerComp = (
             <div style={imageContainer}
-                className="static-bottom bg-indigo-900">
+                className="fixed-bottom bg-indigo-900">
                 <a href="https://github.com/Howardk97">
                     <img src={githubLogo} alt="github logo" style={logos} />
                 </a>
