@@ -25,7 +25,10 @@ export default function Contact () {
         // backgroundRepeat: "no-repeat",
         // backgroundSize: "cover",
         width: "75rem",
-        minWidth: "1rem"
+        minWidth: "1rem",
+        marginBottom: "10rem",
+        marginLeft: "auto",
+        marginRight: "auto"
     }
 
     const formText = {
@@ -45,8 +48,10 @@ export default function Contact () {
         backgroundImage: `url(${stars})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        minHeight: "45rem",
-        height: "length|percentage|auto|initial|inherit"
+        // minHeight: "50rem",
+        // height: "length|percentage|auto|initial|inherit",
+        width: "100%",
+        height: "100%"
     }
 
     const formMessage = {

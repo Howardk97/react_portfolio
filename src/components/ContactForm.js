@@ -18,12 +18,15 @@ export default function ContactForm () {
 //   Styling
 const formContainer = {
     borderRadius: "10%",
-    height: "length|percentage|auto|initial|inherit",
+    // height: "length|percentage|auto|initial|inherit",
+    height: "80%",
+    width: "100%"
 }
 
 const inputStyling = {
     width: "30rem",
-    borderRadius: "5%"
+    borderRadius: "5%",
+    backgroundColor: "#f8fafc"
 }
 
 const labelStyling = {
@@ -54,23 +57,40 @@ const buttonStyle = {
     margin: "2rem"
 }
 
+const formHeader = {
+    fontFamily: "'Bebas Neue', cursive",
+    fontSize: "30px"
+}
+
+// Function to handle form submission
+function submitForm () {
+    // console.log("form submitted!")
+    // document.getElementById("contactForm").reset();
+    alert("Your message was sent to Kimberly. Expect a reply within the next 24 hours.");
+}
+
   return (
     <form 
         ref={form} 
         onSubmit={sendEmail}
         className="bg-indigo-900"
-        style={formContainer}>
-      <label className='mt-5'
+        style={formContainer}
+        id="contactForm">
+      <p className='text-slate-50 row mt-5 ml-5'
+        style={formHeader}>Send me a message!</p>
+      <label className=''
             style={labelStyling}>Name</label>
       <input type="text" 
         name="from_name"
         className='mx-1'
-        style={inputStyling} />
-      <label className='mt-5 ml-5'
+        style={inputStyling}
+        placeholder="Enter your name" />
+      <label className='ml-auto'
             style={labelStyling}>Email</label>
       <input type="email" 
             name="user_email"
-            style={inputStyling} />
+            style={inputStyling}
+            placeholder="Enter your email" />
         <br/>
       <label className='mt-2 row'
             style={messageLabel}>Message</label>
@@ -81,7 +101,8 @@ const buttonStyle = {
                 style={messageBox} />
       <input type="submit" 
             value="Send"
-            style={buttonStyle} />
+            style={buttonStyle}
+            onClick={submitForm} />
     </form>
   );
 };
