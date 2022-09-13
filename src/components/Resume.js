@@ -23,7 +23,7 @@ export default function Resume () {
     }
 
     const resumePdf = {
-        margin: "5rem",
+        marginBottom: "5rem",
         height: "50rem",
         borderRadius: "2%",
     }
