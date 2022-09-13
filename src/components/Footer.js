@@ -20,7 +20,7 @@ function Footer() {
         // height: "length|percentage|auto|initial|inherit",
         margin: "0rem",
         width: "100%",
-        height: "8%"
+        // height: "8%"
     }
     const logos = {
         width: "3rem",

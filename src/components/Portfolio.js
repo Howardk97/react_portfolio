@@ -387,7 +387,7 @@ export default function Portfolio () {
                 <h1 
                 style={portfolio} className="card-title center">Portfolio</h1>
                 <div style={websiteContainer}>
-                    <div className="col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-md-4 col-lg-3 col-xl-2 mt-5">
                         <a href="https://github.com/Howardk97/project1"
                             className=''>
                             <img 
@@ -405,7 +405,7 @@ export default function Portfolio () {
                             </p>}
                         </a> 
                     </div>
-                    <div className="col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-md-4 col-lg-3 col-xl-2 mt-5">
                         <a
                         className="" 
                         href="https://inventorymanagement.herokuapp.com/">
@@ -425,7 +425,7 @@ export default function Portfolio () {
                             </p>}
                         </a>
                     </div>
-                    <div className="col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-md-4 col-lg-3 col-xl-2 mt-5">
                         <a className="" href="https://howardk97.github.io/Code-Quiz/">
                             <img 
                             onMouseEnter={(e) => onHoverQuiz(e)}
@@ -442,7 +442,7 @@ export default function Portfolio () {
                             </p>}
                         </a>
                     </div>
-                    <div className="col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-md-4 col-lg-3 col-xl-2 mt-5">
                         <a className="" href="https://howardk97.github.io/weather-app/">
                             <img 
                             onMouseEnter={(e) => onHoverWeather(e)}
@@ -458,7 +458,7 @@ export default function Portfolio () {
                             </p>}
                         </a>
                     </div>
-                    <div className="col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-md-4 col-lg-3 col-xl-2 mt-5">
                         <a className="" href="https://howardk97.github.io/schedule-tracker/">
                             <img 
                             onMouseEnter={(e) => onHoverSchedule(e)}
@@ -475,7 +475,7 @@ export default function Portfolio () {
                             </p>}
                         </a>
                     </div>
-                    <div className="col-md-4 col-lg-3 col-xl-2">
+                    <div className="col-md-4 col-lg-3 col-xl-2 mt-5">
                         <a className="" href="https://stayintouchnetwork.herokuapp.com/">
                             <img 
                             onMouseEnter={(e) => onHoverInTouch(e)}

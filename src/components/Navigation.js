@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import moonImage from "../public/moon-solid.svg"
 // Function that renders navigation links
 function Navigation() {
     const [width, setWidth] = React.useState(window.innerWidth);
@@ -19,7 +20,7 @@ function Navigation() {
     const navbarContainer = {
         // backgroundColor: "#312e81"
         width: "100%",
-        height: "8%"
+        // height: "8%"
     }
 
     const name = {
@@ -125,7 +126,13 @@ function Navigation() {
             )} else {
                 navbarComp = (
                     <nav style={navbarContainer} className="flex bg-indigo-900 nav fixed-top">
-                        <h1 style={name} className='self-center m-3'>Kimberly Howard</h1>
+                        <div style={name} className='flex self-center m-3'>
+                            <img src={moonImage} 
+                                alt="moon"
+                                className='w-10 h-10 mx-2'/>
+                            <h1 className='mx-2'>Kimberly Howard</h1>
+
+                        </div>
                         <ul className="flex" style={navLinks}>
                             <li className="hover:bg-indigo-400">
                                 <a className='hover:bg-indigo-400'

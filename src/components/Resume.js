@@ -16,7 +16,7 @@ export default function Resume () {
     const resume = {
         color: "white",
         fontWeight: "bold",
-        margin:"2rem",
+        marginTop:"7rem",
         fontFamily: "'Bebas Neue', cursive",
         fontSize: "50px"
     }
