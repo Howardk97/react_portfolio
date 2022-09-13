@@ -1,12 +1,13 @@
 import stars from "../public/stars.jpg"
-import resumeDoc from "../public/full-stack-resume-sep-12.pdf"
+import resumeDoc from "../public/Kimberly-Howard-Resume.pdf"
 
 export default function Resume () {
     const mainPage = {
         backgroundImage: `url(${stars})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-        height: "50rem",
+        height: "length|percentage|auto|initial|inherit",
+        minHeight: "80rem",
         margin: "0",
         display: "flex",
         justifyContent: "center",
@@ -22,9 +23,9 @@ export default function Resume () {
     }
 
     const resumePdf = {
-        marginRight: "2rem",
-        marginLeft: "2rem",
-        marginBottom: "2rem"
+        margin: "5rem",
+        height: "50rem",
+        borderRadius: "2%",
     }
 
     return (

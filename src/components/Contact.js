@@ -7,8 +7,9 @@ export default function Contact () {
         width: "50rem",
         height: "35rem",
         borderRadius: "10%",
-        marginLeft: "2rem",
-        marginRight: "2rem",
+        // marginLeft: "2rem",
+        // marginRight: "2rem",
+        margin: "5rem",
         fontFamily: "'Saira Condensed', sans-serif",
         border: "solid",
         borderColor: "grey"
@@ -19,7 +20,7 @@ export default function Contact () {
         justifyContent: "center",
         backgroundImage: "url('stars.jpg')",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
     }
 
     const formText = {
