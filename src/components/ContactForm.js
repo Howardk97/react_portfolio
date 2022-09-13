@@ -18,6 +18,8 @@ export default function ContactForm () {
 //   Styling
 const formContainer = {
     borderRadius: "10%",
+    border: "solid",
+    borderColor: "grey",
     // height: "length|percentage|auto|initial|inherit",
     height: "80%",
     width: "100%"
